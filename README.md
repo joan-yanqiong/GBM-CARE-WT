@@ -11,3 +11,6 @@ The `R` scripts directory reflects major scripts used to analyze the data associ
 The CARE GBM processed snRNA patient-level 10x count matrices can be downloaded from [GSE274546](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE274546) and the processed cohort-level Smart-Seq2 gene expression matrix can be accessed at [GSE274548](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE274548).
 
 The CARE GBM DNA data can be downloaded from the `Tables` page [here](https://www.synapse.org/Synapse:syn26464346/tables/) and the `Files` page [here](https://www.synapse.org/Synapse:syn26464346/files/). It is also possible to query the data directly using the API by using queries. You can read more about that [here](https://docs.synapse.org/articles/tables.html).
+
+### Data download
+Run the master_of_scripts.R script to run data preprocessing and to generate the figure panels.
