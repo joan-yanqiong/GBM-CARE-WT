@@ -5,13 +5,7 @@
 ## Description: Produce a heatmap showing the similarity between the malignant states and normal brain development states
 #################################
 
-LIU_markers <- read.csv("hNSPC_marker_genes.csv", header = T, stringsAsFactors = F)
-LIU_markers <- as_tibble(LIU_markers)
-
-LIU_markers <- apply(LIU_markers, 2, function(x) {
-  sapply(strsplit(x, split = "_"), function(y) y[[2]][1]) %>%
-    head(50)
-})
+LIU_markers <- read.csv(paste0(DATA_ROOT, "liu_marker_genes.csv"), header = T, stringsAsFactors = F)
 
 LIU_markers_list <- setNames(lapply(1:ncol(LIU_markers), function(i) LIU_markers[, i]), colnames(LIU_markers))
 
