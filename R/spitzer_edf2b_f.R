@@ -246,7 +246,7 @@ compclust_input <- composition_cluster_summary %>%
   complete(Stage, composition_cluster,
            fill = list(counts = 0, freq = 0))
 
-pdf("figures/spitzer_edf2e_wang_compositional_clusters.pdf", width = 6, height = 5, useDingbats = FALSE)
+pdf("figures/spitzer_edf2f_wang_compositional_clusters.pdf", width = 6, height = 5, useDingbats = FALSE)
 ggplot(compclust_input, aes(fill=Stage, x=composition_cluster, y=freq*100)) + 
   geom_bar(position="dodge", stat="identity") +
   plot_theme +
