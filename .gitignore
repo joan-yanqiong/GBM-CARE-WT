@@ -47,3 +47,11 @@ po/*~
 
 # RStudio Connect folder
 rsconnect/
+
+# Don't commit data/outputs
+# */SKIP/*
+logs
+# Skip hidden files
+._*
+.vscode
+.DS_Store
